@@ -88,6 +88,20 @@ module.exports = function(app, passport) {
 				failureRedirect : '/'
 			}));
 
+		// Xcuse =================================
+		// show the signup form
+		app.get('/xcuse', function(req, res) {
+			res.render('xcuse.ejs', { message: req.flash('signupMessage') });
+		});
+
+		// process the xcuse form
+		app.post('/xcuse', passport.authenticate('local-xcuse', {
+			successRedirect : '/profile', // redirect to the secure profile section
+			failureRedirect : '/xcuse', // redirect back to the signup page if there is an error
+			failureFlash : true // allow flash messages
+		}));
+
+
 // =============================================================================
 // AUTHORIZE (ALREADY LOGGED IN / CONNECTING OTHER SOCIAL ACCOUNT) =============
 // =============================================================================

@@ -5,27 +5,42 @@
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<style>
-		body 		{ padding-top:80px; }
+		body 		{ padding-top:80px; 
+			background-color:black;}
+		#button {
+			padding:14px;
+		}
+		#center{
+			text-align:center;
+			margin:20px;
+		}
+		.container{
+			height: 600px;
+
+			background-color:white;
+		}
 	</style>
 </head>
 <body>
 <div class="container">
 
-	<div class="jumbotron text-center">
-		<h1><span class="fa fa-lock"></span> Node Authentication</h1>
+	<div class="col-sm-6 col-sm-offset-3">
+		<h1><span class="fa fa-lock"></span>Xcuses</h1>
 
-		<p>Login or Register with:</p>
-
+		<div id="center">		
+			<a href="" class="btn btn-primary btn-lg">Click me for a solid excuse</a>
+		</div>
 		<a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
 		<a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
-		<a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+		<!-- <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
 		<a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
-		<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google+</a>
+		<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google+</a> -->
 	</div>
 
 	<div class="text-center">
-		<p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-		<p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
+
+		<!-- <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
+		<p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p> -->
 	</div>
 
 </div>

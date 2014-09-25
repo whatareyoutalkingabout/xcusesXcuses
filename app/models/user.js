@@ -26,8 +26,12 @@ var userSchema = mongoose.Schema({
         token        : String,
         email        : String,
         name         : String
-    }
+    },
+    excuse: String
+});
 
+var xcusesSchema = mongoose.Schema({
+    excuse: String
 });
 
 // generating a hash
